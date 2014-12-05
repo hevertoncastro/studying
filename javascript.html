@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+<script type="text/javascript">
+/*
+var outro_simples = {
+    nome: "Plínio",
+    oi: function() {
+        console.log("Olá, " + this.nome + "!");
+    }
+};
+
+outro_simples.nome = "Heverton";
+
+outro_simples.oi();
+
+
+function OlaSimples(seuNome){
+    var nome = seuNome;
+    
+    this.oi = function(){
+        console.log("Olá "+nome+"!");
+    }
+}
+var simples = new OlaSimples("Heverton");
+
+simples.oi();
+
+
+function Funcionario(nome, cargo, salario){
+    this.nome = nome;
+    this.cargo = cargo;
+    this.salario = salario;
+}
+
+var paulo = new Funcionario("Paulo", "Analista de sistemas", 5000);
+var pedro = new Funcionario("Pedro", "Gerente de contas", 4500);
+
+console.log("O nome de paulo é "+paulo.nome);
+console.log("O nome de pedro é "+pedro.nome);
+
+
+
+
+function Funcionario(){
+
+}
+var paulo = new Funcionario();
+
+Funcionario.prototype.nome = "<sem nome>";
+Funcionario.prototype.cargo = "<sem cargo>";
+Funcionario.prototype.salario = NaN;
+
+console.log(paulo.nome, paulo.cargo, paulo.salario);
+
+
+Array.prototype.capitalize = function() {
+    var resultado = new Array();
+    
+    for(var pos = 0; pos < lista.length; pos++) {
+        var primeiro = lista[pos].slice(0, 1);
+        var resto = lista[pos].substr(1);
+        resultado.push(primeiro.toUpperCase() + resto);
+    }
+    return resultado;
+}
+
+var lista = ["vermelho", "marrom", "azul", "preto", "amarelo"];
+
+console.log(lista.capitalize());
+
+
+function Animal() {
+    this.comer = function(){
+        console.log("Eu como");
+    };
+    this.respirar = function(){
+        console.log("Eu respiro");
+    };
+}
+
+function Mamifero(){
+    this.mamar = function(){
+        console.log("Eu mamo");
+    };
+}
+Mamifero.prototype = new Animal();
+
+var mamifero = new Mamifero();
+
+function Gato(){
+    this.miar = function(){
+        console.log("Miau!");
+    }
+}
+
+Gato.prototype = new Mamifero();
+
+var gato = new Gato();
+
+function Cachorro(){
+    this.latir = function(){
+        console.log("Au au!");
+    }
+    
+    this.comer = function() {
+        console.log("Eu como ração");
+    }
+}
+
+Cachorro.prototype = new Mamifero();
+
+cachorro = new Cachorro();
+
+cachorro.mamar();
+gato.comer();
+cachorro.comer();
+cachorro.respirar();
+cachorro.latir();
+
+
+Object.prototype.includes = function(constructor){
+
+	var objeto = new constructor();
+
+	for(var propriedade in objeto){
+		if(objeto.hasOwnProperty(propriedade)){
+			this.prototype[propriedade] = objeto[propriedade];
+		}
+	}
+};
+
+function Animal(){
+	this.comer = function(){
+		console.log("Eu como");
+	}
+	this.respirar = function(){
+		console.log("Eu respiro");
+	}
+}
+
+function Peixe(){
+	this.respirar = function(){
+		console.log("Eu respiro debaixo d'água");
+	}
+}
+Peixe.prototype = new Animal();
+
+var peixe = new Peixe();
+
+peixe.respirar();
+
+function Nadador(){
+	this.nadar = function(){
+		console.log("Eu nado");
+	}
+}
+
+Peixe.includes(Nadador);
+
+peixe.nadar();
+
+peixe.comer();
+
+var x = 1;
+
+function variavelLocal() {
+	var x = 99;
+	var y = 42
+	console.log(x, y);
+}
+
+variavelLocal();
+console.log(x);
+console.log(y);
+*/
+
+function hey(texto) {
+	return function(nome) {
+		console.log(texto + ", " + nome);
+	}
+}
+
+var bomDia = hey("Bom dia");
+bomDia("João");
+bomDia("José");
+bomDia("Nicolau");
+
+</script>
+	
+</body>
+</html>
